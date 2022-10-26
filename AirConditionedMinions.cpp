@@ -29,12 +29,6 @@ int main()
             return a.second < b.second;
         });
 
-    std::cout << '\n';
-    for(auto x : preferences)
-    {
-        std::cout << x.first << ' ' << x.second << '\n';
-    }
-
     unsigned rooms = 1;
     unsigned actualTemp = preferences[0].second;
     for(int i = 1; i<preferences.size(); ++i)
@@ -47,12 +41,3 @@ int main()
 
     std::cout << rooms;
 }
-
-/*
-5
-2 7
-2 4
-2 2
-7 8
-4 7
-*/
